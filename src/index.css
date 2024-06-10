@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* 
+@import url(https://code.highcharts.com/7.0.0/css/themes/dark-unica.css); */
+
+/* .highcharts-figure {
+  @apply min-w-full max-w-4xl mx-auto my-4;
+} */
+
+/* .highcharts-description {
+  @apply text-center mt-4 text-gray-700;
+} */
+
+*{
+  background-color:#414a4c
+}
