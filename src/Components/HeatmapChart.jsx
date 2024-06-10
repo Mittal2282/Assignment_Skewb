@@ -88,13 +88,32 @@ function HeatmapChart() {
   }, []);
 
   return (
-    <div className="container mx-auto my-8">
-      <figure className="highcharts-figure mx-auto my-8">
-        <div id="heatmap-container" className="w-full max-w-4xl h-96"></div>
-        <p className="highcharts-description text-center mt-4 text-white">
-          Heatmap showing the Air Quality Index (AQI) in different cities over the months.
-        </p>
-      </figure>
+    <div className="container mx-auto my-12 p-4 text-center">
+      <div id="heatmap-container" className="w-full max-w-4xl h-96 mx-auto"></div>
+      <p className="highcharts-description text-center mt-4 text-white">
+        Heatmap showing the Air Quality Index (AQI) in different cities over the months.
+      </p>
+      <div className="text-left text-white mt-4">
+        <h1 className="font-bold text-2xl">Key Insights :</h1>
+        <br/>
+        <ul>
+          <li>
+            <strong>Comparative Analysis:</strong> Sydney consistently maintains better air quality compared to other cities, with AQI levels predominantly below 65 throughout the year. This could be attributed to stringent environmental regulations or geographical factors like oceanic breezes aiding pollutant dispersion.
+          </li>
+          <br />
+          <li>
+            <strong>Urban Planning Implications:</strong> High AQI levels, particularly in densely populated cities like Tokyo and London, during specific months may indicate potential health risks and necessitate targeted urban planning interventions such as emissions control measures or green infrastructure development.
+          </li>
+          <br />
+          <li>
+            <strong>Business Opportunities:</strong> Companies specializing in air purification technologies or indoor air quality monitoring systems might find opportunities in cities with consistently poor AQI levels, such as New York during summer months, where AQI can exceed 70 due to factors like increased traffic and industrial activity.
+          </li>
+          <br />
+          <li>
+            <strong>Tourism and Quality of Life:</strong> Air quality data can influence tourism decisions and city branding efforts. Cities with consistently lower AQI levels, like Sydney and New York during certain months, can leverage their environmental quality as a selling point for attracting tourists and residents seeking a high quality of life.
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }

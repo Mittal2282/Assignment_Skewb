@@ -90,13 +90,28 @@ function BarChart() {
   }, []);
 
   return (
-    <div className="container mx-auto my-8">
-      <figure className="highcharts-figure mx-auto my-8">
-        <div id="bar-chart-container" className="w-full max-w-4xl h-96"></div>
-        <p className="highcharts-description text-center mt-4 text-white">
-          Bar chart showing the comparative Average rainfall in different cities
-        </p>
-      </figure>
+    <div className="container mx-auto my-4 p-4 text-center">
+      <div id="bar-chart-container" className="mx-auto my-8 w-full max-w-4xl h-96"></div>
+      <p className="highcharts-description text-center mt-4 text-white">
+          Bar chart showing the comparative Rainfall in different cities
+      </p>
+      <div className="text-left text-white mt-4">
+        <h1 className="font-bold text-2xl">Key Insights :</h1>
+        <br/>
+        <ul>
+          <li>
+            <strong>Impact on Business Operations:</strong> Understanding these rainfall patterns can aid businesses in various sectors. For instance, industries reliant on outdoor activities or agriculture in cities like Sydney might need to prepare for seasonal fluctuations, while infrastructure projects in cities with stable rainfall, like Tokyo, might face fewer weather-related delays.
+          </li>
+          <br />
+          <li>
+            <strong>Market Opportunities:</strong> Products or services related to water management, such as drainage systems or rainwater harvesting, might find greater demand in cities with higher rainfall, such as Sydney or London, compared to cities with lower rainfall, like Tokyo or New York.
+          </li>
+          <br />
+          <li>
+            <strong>Urban Planning Considerations:</strong> Municipalities can utilize this data to enhance urban planning efforts, such as improving drainage systems in cities prone to heavy rainfall or implementing water conservation measures in regions with lower rainfall, contributing to sustainable city development.
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }
